@@ -34,6 +34,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192x192.svg" />
         <link rel="icon" type="image/svg+xml" href="/icons/icon-32x32.svg" />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          sizes="16x16"
+          href="/icons/icon-16x16.svg"
+        />
       </head>
       <body className="antialiased font-sans" suppressHydrationWarning>
         {children}
