@@ -1,0 +1,52 @@
+{
+  "name": "Ntigi Logistics",
+  "short_name": "Ntigi Logist",
+  "description": "Ntigi Logistics — track and manage your shipments",
+  "start_url": "/en/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#263070",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Track shipment",
+      "short_name": "Track",
+      "url": "/en/dashboard/track",
+      "icons": [
+        {
+          "src": "/icons/icon-96x96.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "My shipments",
+      "short_name": "Home",
+      "url": "/en/dashboard",
+      "icons": [
+        {
+          "src": "/icons/icon-96x96.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "id": "customer-portal-nigi-logitics-70c773fc"
+}

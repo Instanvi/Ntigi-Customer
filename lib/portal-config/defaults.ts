@@ -1,0 +1,181 @@
+import type { PortalConfig } from "./types";
+
+export const DEFAULT_PORTAL_CONFIG: PortalConfig = {
+  agencySlug: "first-cargo",
+  appName: "Customer Portal",
+  defaultLocale: "en",
+  brand: {
+    primary: "#4E6BFA",
+    logoUrl: null,
+  },
+  support: {
+    phone: null,
+    email: null,
+    locationsUrl: null,
+  },
+  notice: null,
+  staffAppUrl: "https://ntigi.cm",
+  version: "1.0.0",
+  features: {
+    showNotifications: true,
+    showNotificationBadge: true,
+    notificationBadgeCount: 0,
+    showDrawerMenu: true,
+    showPoweredBy: true,
+    showHomeQuickActions: true,
+    showHomeShipmentList: false,
+  },
+  navigation: {
+    bottomNavVariant: "classic",
+    bottomTabs: [
+      {
+        id: "home",
+        href: "/dashboard",
+        label: "Home",
+        icon: "House",
+        matchPaths: ["/dashboard", "/dashboard/track"],
+      },
+      {
+        id: "orders",
+        href: "/shipments",
+        label: "Orders",
+        icon: "Package",
+        matchPaths: ["/shipments"],
+      },
+      {
+        id: "payments",
+        href: "/payments",
+        label: "Payments",
+        icon: "Money",
+        matchPaths: ["/payments"],
+      },
+    ],
+    drawerMenu: [
+      {
+        id: "account",
+        label: "My account",
+        icon: "User",
+        href: "/account",
+      },
+      {
+        id: "orphan",
+        label: "Unclaimed parcels",
+        icon: "Question",
+        href: "/unclaimed-parcels",
+      },
+      {
+        id: "terms",
+        label: "Terms of service",
+        icon: "FileText",
+        href: "#",
+      },
+      {
+        id: "privacy",
+        label: "Privacy policy",
+        icon: "Shield",
+        href: "#",
+      },
+    ],
+    legalLinks: [
+      { id: "terms", label: "Terms of service", href: "#" },
+      { id: "privacy", label: "Privacy policy", href: "#" },
+    ],
+  },
+  locations: [
+    {
+      id: "douala",
+      name: "Douala Main Branch",
+      address: "Akwa, Boulevard de la Liberté, Douala",
+      phone: "+237 677 000 001",
+      lat: 4.0511,
+      lng: 9.7679,
+    },
+    {
+      id: "yaounde",
+      name: "Yaoundé Central",
+      address: "Centre-ville, Avenue Kennedy, Yaoundé",
+      phone: "+237 677 000 002",
+      lat: 3.848,
+      lng: 11.5021,
+    },
+    {
+      id: "bafoussam",
+      name: "Bafoussam Office",
+      address: "Quartier Commercial, Bafoussam",
+      phone: "+237 677 000 003",
+      lat: 5.4781,
+      lng: 10.4178,
+    },
+    {
+      id: "garoua",
+      name: "Garoua Branch",
+      address: "Centre-ville, Garoua",
+      phone: "+237 677 000 004",
+      lat: 9.3014,
+      lng: 13.3975,
+    },
+  ],
+  home: {
+    noticeSectionTitle: "General Notice",
+    notices: [
+      {
+        id: "welcome",
+        body: "Welcome to your customer portal. Track shipments and manage orders anytime.",
+      },
+      {
+        id: "pickup",
+        body: "Unclaimed parcels are held at branch for 7 days. Collect yours promptly.",
+      },
+      {
+        id: "hours",
+        body: "Branch hours: Monday–Saturday 8:00 AM – 6:00 PM. Closed on public holidays.",
+      },
+      {
+        id: "payments",
+        body: "Pay delivery fees at any branch or through mobile money before pickup.",
+      },
+    ],
+    quickActions: [
+      {
+        id: "orphan",
+        label: "Unclaimed Parcels",
+        icon: "Question",
+        action: { type: "href", href: "/unclaimed-parcels" },
+      },
+      {
+        id: "locations",
+        label: "Our Locations",
+        icon: "MapPin",
+        action: { type: "href", href: "/locations" },
+      },
+      {
+        id: "support",
+        label: "Customer Support",
+        icon: "Headset",
+        action: { type: "href", href: "/support" },
+      },
+    ],
+  },
+  copy: {
+    portalSubtitle: "Customer portal",
+    trackHeroTitle: "Track Your Shipment",
+    trackHeroPlaceholder: "Enter Tracking Number",
+    trackHeroButton: "Track",
+    trackVerifyTitle: "Verify your parcel",
+    trackVerifySubtitle:
+      "Enter the receiver phone number linked to this shipment.",
+    trackVerifySubmit: "Track live",
+    welcomePrefix: "Welcome back,",
+    noticeSectionTitle: "General Notice",
+    shipmentsTitle: "Shipments",
+    shipmentsSentHint: "Parcels you sent",
+    shipmentsReceivedHint: "Parcels addressed to you",
+    sentTabLabel: "Sent",
+    receivedTabLabel: "Received",
+    viewDetailsLabel: "view Details",
+    poweredByLabel: "Powered by NTIGI",
+    accountVersionLabel: "Customer portal",
+    staffAppLabel: "Agency staff?",
+    staffAppDescription: "Open the operations app",
+  },
+};
